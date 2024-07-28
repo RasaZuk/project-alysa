@@ -10,6 +10,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 0.2rem solid black;
     border-radius: 3rem;
+    min-height: 100vh;
+    display: flex;
 }
 
 aside {
@@ -17,10 +19,15 @@ aside {
     margin-left: 4rem;
 }
 
+main {
+    width: calc(100% - 15rem);
+    margin: 1rem 3rem 2rem 3rem;
+}
+
 .logo {
     display: flex;
     gap: 1rem;
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 3rem 0;
 }
 
 .creation {
@@ -41,7 +48,7 @@ aside {
     
 }
 
-button {
+.creation button {
     display: flex;
     background-color: rgb(111, 98, 174);
     border-radius: 50%;
@@ -54,3 +61,115 @@ button {
     border: none;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.aside-bottom {
+    background-color: rgb(247, 247, 252);
+    width: 11rem;
+    height: 15rem;
+    padding: 1rem;
+    color: rgb(201, 204, 228);
+    margin-top: 5rem;
+    position: relative;   
+}
+
+.aside-bottom p {
+    margin-top: 6rem;
+
+}
+
+.aside-bottom button {
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(111, 98, 174);
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+.aside-bottom img {
+    width: 11rem;
+    position: absolute;
+    top: -2.5rem;
+    left: -0.1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 3rem 0;
+    
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.date span {
+    color: rgb(111, 98, 174);
+    font-weight: 700;
+}
+
+.date p {
+    color: rgb(201, 201, 201);
+}
+
+.header-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-right svg {
+    margin-left: 1rem;
+}
+
+.header-right span {
+    background-color: rgb(203, 193, 247);
+    width: 1.8rem;
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.desk {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 204, 228);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    height: 10rem;
+}
+
+.desk div h1{
+    margin: 1rem 0 0.5rem 0;
+}
+
+.desk img {
+    position: absolute;
+    right: 2rem;
+    top: -3.5rem;
+
+}

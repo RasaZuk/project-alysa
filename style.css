@@ -220,6 +220,7 @@ header {
     background-color: rgb(248, 248, 248);
     padding: 1rem;
     border-radius: 0.5rem;
+    flex-grow: 1;
 }
 
 .categories img {
@@ -230,3 +231,27 @@ header {
     color: rgb(72, 109, 230);
 }
 
+.categories .text {
+    width: 50%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.status {
+    border: 1px solid color grey;
+    width: 2rem;
+    height: 1.5rem;
+    
+    
+       
+}
+
+.slide {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(79, 62, 156);
+    
+}

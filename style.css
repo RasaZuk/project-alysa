@@ -182,45 +182,65 @@ header {
 .tasks div {
     display: flex;
     flex-direction: row;
-    height: 4rem;
+    height: 5rem;
     width: 16.5rem;
-    gap: 1.5rem;
-    
+    gap: 1.6rem;
 }
 
+.tasks .boxes div {
+    display: flex;
+    flex-direction: column;
+    
+}
+.tasks div svg {
+    border: 1px solid red;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
 
 .boxes {
-    background-color: yellow;
-    color: white;
+   color: white;
     border-radius: 0.5rem;
 }
 
 .boxes svg {
-    border-radius: 1rem;
-    width: 60%;
+    border-radius: 0.6rem;
     align-self: center;
-    justify-items: center;
-}
-.boxes div {
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .final {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.text p {
+    width: 55%;
+    margin: 0 0 0.3rem 0;
+}
+
+.span {
+    font-weight: 700;
 }
 
 .categories {
     display: flex;
     flex-direction: row;
-    background-color: rgb(248, 248, 248);
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(247, 239, 244);
     padding: 1rem;
     border-radius: 0.5rem;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .categories img {
@@ -229,29 +249,82 @@ header {
 
 .categories div h3 {
     color: rgb(72, 109, 230);
+    margin-bottom: 0.3rem;
 }
 
-.categories .text {
-    width: 50%;
+.categories div label {
+    margin: 0 1rem 2rem 1.5rem;
 }
+
 .row {
     display: flex;
     flex-direction: row;
 }
 
-.status {
-    border: 1px solid color grey;
-    width: 2rem;
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
     height: 1.5rem;
-    
-    
-       
 }
 
-.slide {
-    width: 1rem;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid rgb(169, 169, 169);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
     height: 1rem;
+    width: 1rem;
+    left: 0.15rem;
+    bottom: 0.25rem;
+    background-color: #4F3E9C;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #fff ;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #4F3E9C, 0 0 1px #BBBFDE;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
     border-radius: 50%;
-    background-color: rgb(79, 62, 156);
-    
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-right: 0.8rem;
 }

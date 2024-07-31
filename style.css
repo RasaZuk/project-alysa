@@ -10,7 +10,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 0.2rem solid black;
     border-radius: 3rem;
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
 }
 
@@ -21,20 +21,20 @@ aside {
 
 main {
     width: calc(100% - 15rem);
-    margin: 1rem 3rem 2rem 3rem;
+    margin: 1rem 3rem 2.3rem 3rem;
 }
 
 .logo {
     display: flex;
     gap: 1rem;
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 4rem 0;
 }
 
 .creation {
     display: flex;
     background-color: rgb(247, 248, 253);
     width: 11rem;
-    height: 5rem;
+    height: 4rem;
     padding: 1rem;
     align-items: center;
     justify-content: center;
@@ -59,35 +59,35 @@ main {
     color: white;
     font-size: 1.5rem;
     border: none;
+    box-shadow: 1px 7px 10px 0 rgb(111, 98, 174, 0.2);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 3rem;
+    gap: 2rem;
+    margin: 2rem 0 0 1rem;
 }
 
 .navigation a {
     text-decoration: none;
     color: black;
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .aside-bottom {
     background-color: rgb(247, 247, 252);
     width: 11rem;
-    height: 15rem;
+    height: 11rem;
     padding: 1rem;
     color: rgb(201, 204, 228);
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     position: relative;   
 }
 
 .aside-bottom p {
-    margin-top: 5rem;
-
+    margin-top: 3rem;
 }
 
 .aside-bottom button {
@@ -101,7 +101,7 @@ main {
 }
 
 .aside-bottom img {
-    width: 11rem;
+    width: 9.5rem;
     position: absolute;
     top: -2.5rem;
     left: -0.1rem;
@@ -110,8 +110,7 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0 3rem 0;
-    
+    margin: 0.5rem 0 3rem 0; 
 }
 
 .header-left {
@@ -137,12 +136,13 @@ header {
 
 .header-right {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.8rem;
     align-items: center;
+    margin-right: 2rem;
 }
 
-.header-right svg {
-    margin-left: 1rem;
+.header-right svg:first-child {
+    margin-right: 2rem;
 }
 
 .header-right span {
@@ -151,8 +151,13 @@ header {
     height: 2rem;
     padding: 0.3rem;
     border-radius: 0.3rem;
+    margin-left: 2rem;
+    font-weight: 700;
 }
 
+.header-right p {
+    font-weight: 700;
+}
 .desk {
     display: flex;
     flex-direction: column;
@@ -176,38 +181,41 @@ header {
 .tasks h4 {
     color: rgb(169, 169, 169);
     margin: 1rem 0 1rem 0;
-    
 }
 
 .tasks div {
     display: flex;
     flex-direction: row;
-    height: 5rem;
-    width: 16.5rem;
+    height: 4rem;
+    width: 16.8rem;
     gap: 1.6rem;
 }
 
 .tasks .boxes div {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    align-items: flex-start;
+    line-height: 0.1rem;
+    padding: 1rem;
 }
+
+
 .tasks div svg {
-    border: 1px solid red;
-    padding: 0.5rem;
-    width: 4rem;
-    height: 3rem;
+    padding: 0.4rem;
     margin-left: 1rem;
 }
 
 .boxes {
-   color: white;
+    color: white;
     border-radius: 0.5rem;
 }
 
 .boxes svg {
     border-radius: 0.6rem;
     align-self: center;
+}
+.boxes span {
+    font-size: 1.5rem;
 }
 
 .final {
